@@ -19,29 +19,29 @@ variable "cloud_armor_filepath" {
   type        = string
 }
 
-variable "pre_configured_rules" {
-  description = "Map of pre-configured rules with Sensitivity levels."
-  type = map(any)
-  default = {}
-}
+# variable "pre_configured_rules" {
+#   description = "Map of pre-configured rules with Sensitivity levels."
+#   type = map(any)
+#   default = {}
+# }
 
-variable "security_rules" {
-  description = "Map of Security rules with list of IP addresses to block or unblock."
-  type = map(any)
-  default = {}
-}
+# variable "security_rules" {
+#   description = "Map of Security rules with list of IP addresses to block or unblock."
+#   type = map(any)
+#   default = {}
+# }
 
-variable "custom_rules" {
-  description = "Custome security rules"
-  type = map(any)
-  default = {}
-}
+# variable "custom_rules" {
+#   description = "Custome security rules"
+#   type = map(any)
+#   default = {}
+# }
 
-variable "threat_intelligence_rules" {
-  description = "Map of Threat Intelligence Feed rules"
-  type = map(any)
-  default = {}
-}
+# variable "threat_intelligence_rules" {
+#   description = "Map of Threat Intelligence Feed rules"
+#   type = map(any)
+#   default = {}
+# }
 
 # variable "pre_configured_rules" {
 #   description = "Map of pre-configured rules with Sensitivity levels."
