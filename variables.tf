@@ -18,3 +18,27 @@ variable "cloud_armor_filepath" {
   description = "(Required) YAML File Path"
   type        = string
 }
+
+variable "pre_configured_rules" {
+  description = "Map of pre-configured rules with Sensitivity levels."
+  type = map()
+  default = {}
+}
+
+variable "security_rules" {
+  description = "Map of Security rules with list of IP addresses to block or unblock."
+  type = map()
+  default = {}
+}
+
+variable "custom_rules" {
+  description = "Custome security rules"
+  type = map()
+  default = {}
+}
+
+variable "threat_intelligence_rules" {
+  description = "Map of Threat Intelligence Feed rules"
+  type = map()
+  default = {}
+}
