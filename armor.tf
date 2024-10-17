@@ -1,5 +1,5 @@
 locals {
-  policy = yamldecode(file("${path.module}/cloud-armor.yaml"))
+  policy = yamldecode(file("${var.cloud_armor_filepath}"))
 }
 
 module "security_policy" {
@@ -21,5 +21,4 @@ module "security_policy" {
   # Custom Rules using CEL
 
   custom_rules = local.policy["custom_rules"]
-
 }
