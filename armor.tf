@@ -3,7 +3,7 @@ locals {
 }
 
 module "security_policy" {
-  source   = "https://github.com/omkarm07/tf-cloud-armor.git"
+  source   = "github.com/omkarm07/tf-cloud-armor.git?ref=main"
 
   project_id                           = local.policy["project_id"]
   name                                 = local.policy["name"]
